@@ -7,13 +7,18 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "next start",
     "dev": "next",
-    "build": "next build"
+    "build": "next build",
+    "css:build": "node-sass --omit-source-map-url assets/scss/styles.scss static/css/styles.css",
+    "css:watch": "npm run css:build -- --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "bulma": "^0.8.0",
     "next": "^9.2.0",
+    "node-sass": "^4.13.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   }

@@ -1,5 +1,10 @@
+import Nav from '../components/nav.component';
+
 export default () => {
   return (
-    <div>Hello I am the index page</div>
+    <div>
+      <Nav />
+      I am Index
+    </div>
   )
 }
